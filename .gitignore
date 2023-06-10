@@ -1,3 +1,20 @@
+.vscode/
+extern/SDL2-*
+extern/SDL2_image-*
+build/.cmake/
+build/array
+build/CMakeFiles
+build/dict
+build/json
+build/ui
+build/*.exe
+build/*.pdb
+build/*.dll
+build/cmake_install.cmake
+build/CMakeCache.txt
+compile_commands.json
+Makefile
+
 # Prerequisites
 *.d
 
