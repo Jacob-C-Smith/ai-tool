@@ -1,4 +1,4 @@
-cmake_minimum_required (VERSION 3.8)
+cmake_minimum_required (VERSION 3.26)
 
 project ("ai-tool")
 set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/lib)
@@ -28,7 +28,9 @@ endif()
 find_package(SDL2 REQUIRED CONFIG REQUIRED COMPONENTS SDL2)
 find_package(SDL2 REQUIRED CONFIG COMPONENTS SDL2main)
 
-# AI tool
+include_directories(${SDL2_INCLUDE_DIRS})
+
+# AI tool executable
 add_executable (ai-tool "main.c" "Resource.rc") 
 add_dependencies(ai-tool json array dict ui)
 target_include_directories(ai-tool PUBLIC include ${CMAKE_SOURCE_DIR}/extern/json/include/ ${CMAKE_SOURCE_DIR}/extern/array/include/ ${CMAKE_SOURCE_DIR}/extern/dict/include/ ${CMAKE_SOURCE_DIR}/extern/ui/include/ ) 
