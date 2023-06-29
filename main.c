@@ -157,14 +157,14 @@ void saveas_click (UIElement_t *p_element, ui_mouse_state_t mouse_state)
     name = (JSONValue_t)
     {
         .type = JSONstring,
-        .string = _strdup(ai_name->text_input->text)
+        .string = 0//_strdup(ai_name->text_input->text)
     };
     
     // Set the initial state
     initial_state = (JSONValue_t)
     {
         .type = JSONstring,
-        .string = _strdup(ai_initial_state->dropdown->options[ai_initial_state->dropdown->index])
+        .string = 0//_strdup(ai_initial_state->dropdown->options[ai_initial_state->dropdown->index])
     };
     
     // Set the state array
@@ -180,7 +180,7 @@ void saveas_click (UIElement_t *p_element, ui_mouse_state_t mouse_state)
         *state_name = (JSONValue_t)
         {
             .type   = JSONstring,
-            .string = _strdup(ai_states->table->data[i])
+            .string = 0//_strdup(ai_states->table->data[i])
         };
 
         array_add(state_array, state_name);
@@ -277,7 +277,7 @@ void add_click (UIElement_t *p_element, ui_mouse_state_t mouse_state)
     UITextInput_t *p_text_input     = state_name->text_input;
     UITable_t     *p_table          = table->table;
     
-    char *z = _strdup(state_name->text_input->text);
+    char *z = 0;//_strdup(state_name->text_input->text);
     if ( get_table_cell(p_table, 0, 0) == 0 || strlen((char *)(get_table_cell(p_table, 0, 0))) == 0 )
     {
         set_table_cell(p_table, 0, 0, z);
