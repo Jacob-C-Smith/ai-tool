@@ -1,0 +1,140 @@
+{
+    "name"     : "G10 AI Tool",
+    "width"    : 640,
+    "height"   : 254,
+    "title"    : "AI Tool",
+    "elements" : [
+        {
+            "type"     : "IMAGE",
+            "name"     : "logo",
+            "x"        : 16,
+            "y"        : 12,
+            "width"    : 24,
+            "height"   : 24,
+            "path"     : "ai.ico"
+        },
+        {
+            "type"     : "LABEL",
+            "name"     : "G10 ai tool title label",
+            "text"     : "AI Tool", 
+            "x"        : 48,
+            "y"        : 16,
+            "size"     : 2
+        },
+        {
+            "type"      : "LABEL",
+            "name"      : "ai tool path label",
+            "text"      : "path ( Drag'n'drop )",
+            "x"         : 16,
+            "y"         : 44,
+            "size"      : 1
+        },
+        {
+            "type"        : "TEXT INPUT",
+            "name"        : "ai tool path",
+            "x"           : 16,
+            "y"           : 60,
+            "width"       : 80,
+            "height"      : 14,
+            "text"        : "",
+            "placeholder" : "",
+            "length"      : 255
+        },
+        {
+            "type"      : "LABEL",
+            "name"      : "ai name label",
+            "text"      : "name",
+            "x"         : 16,
+            "y"         : 76,
+            "size"      : 1
+        },
+        {
+            "type"        : "TEXT INPUT",
+            "name"        : "ai name",
+            "x"           : 16,
+            "y"           : 90,
+            "width"       : 80,
+            "height"      : 14,
+            "placeholder" : "AI",
+            "length"      : 255
+        },
+        {
+            "type"      : "LABEL",
+            "name"      : "ai initial state label",
+            "text"      : "initial state",
+            "x"         : 16,
+            "y"         : 108,
+            "size"      : 1
+        },
+        {
+            "type"      : "DROPDOWN",
+            "name"      : "initial state",
+            "x"         : 16,
+            "y"         : 122,
+            "options"   : [
+                ""
+            ],
+            "index"     : 0,
+            "collapsed" : true
+        },
+        {
+            "type"      : "LABEL",
+            "name"      : "ai states label",
+            "text"      : "states",
+            "x"         : 16,
+            "y"         : 140,
+            "size"      : 1
+        },
+        {
+            "type"        : "TABLE",
+            "name"        : "states table",
+            "x"           : 16,
+            "y"           : 152,
+            "max rows"    : 255,
+            "max columns" : 1
+        },
+        {
+            "type"        : "BUTTON",
+            "name"        : "ai add state button",
+            "label"       : "+",
+            "x"           : 16,
+            "y"           : 185
+        },
+        {
+            "type"        : "BUTTON",
+            "name"        : "ai remove state button",
+            "label"       : "-",
+            "x"           : 16,
+            "y"           : 201
+        },
+        {
+            "type"      : "LABEL",
+            "name"      : "ai tool status",
+            "text"      : "",
+            "x"         : 16,
+            "color"     : [
+                255,0,0
+            ],
+            "y"         : 225,
+            "size"      : 2
+        },
+        {
+            "type"        : "TEXT INPUT",
+            "name"        : "add state name text input",
+            "x"           : 32,
+            "y"           : 184,
+            "width"       : 80,
+            "height"      : 14,
+            "text"        : "",
+            "placeholder" : "state name",
+            "length"      : 255
+        },
+        {
+            "type"        : "BUTTON",
+            "name"        : "ai save button",
+            "label"       : "Save As...",
+            "x"           : 544,
+            "y"           : 232
+        }
+    ]
+}
